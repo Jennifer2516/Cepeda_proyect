@@ -1,0 +1,13 @@
+<?php
+// Incluimos el archivo que ya creaste anteriormente
+include("conexion.php");
+
+if ($conexion) {
+    echo "<h1>¡Éxito!</h1>";
+    echo "<p>El sistema se ha conectado correctamente a la base de datos <strong>pasantias_fcs</strong>.</p>";
+    echo "<p>Ya puedes comenzar a registrar las fichas individuales de los estudiantes.</p>";
+} else {
+    echo "<h1>Error de Conexión</h1>";
+    echo "<p>No se pudo establecer el vínculo con phpMyAdmin. Verifica que el servidor MySQL esté activo en XAMPP.</p>";
+}
+?>
